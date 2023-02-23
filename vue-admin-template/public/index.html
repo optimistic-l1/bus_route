@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <!--重要meta, 必须!-->
+  <meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no" />
+
+  <script src="https://webapi.amap.com/subway?v=1.0&amp;key=4056aa1b76794cdb8df1d5ee0000bdb8&amp;callback=cbk"></script>
+  <!--同步加载AMap-->
+  <script
+    src='https://webapi.amap.com/maps?v=2.0&key=4056aa1b76794cdb8df1d5ee0000bdb8&&plugin=AMap.Scale,AMap.HawkEye,AMap.ToolBar,AMap.ControlBar,AMap.PlaceSearch,AMap.DistrictSearch,AMap.HeatMap,AMap.3DTilesLayer,AMap.IndoorMap,AMap.MoveAnimation,AMap.ElasticMarker,AMap.MarkerCluster,AMap.IndexCluster,AMap.MouseTool,AMap.BezierCurveEditor,AMap.RectangleEditor,AMap.CircleEditor,AMap.EllipseEditor,AMap.GeoJSON,AMap.PolylineEditor,AMap.PolygonEditor,AMap.AutoComplete,AMap.Driving,AMap.Walking,AMap.Riding,AMap.Transfer,AMap.Geocoder,AMap.GraspRoad,AMap.StationSearch,AMap.LineSearch,AMap.ArrivalRange,AMap.CitySearch,AMap.Geolocation,AMap.Weather,AMap.RangingTool'></script>
+  <!--自定义图层-GLCustomLayer 结合 THREE-->
+
+
+  <script type="text/javascript" src='https://a.amap.com/jsapi_demos/static/data3d/lib/three.117.js'></script>
+  <script type="text/javascript" src='https://a.amap.com/jsapi_demos/static/data3d/lib/GLTFLoader.117.min.js'></script>
+
+  <title>
+    <%= webpackConfig.name %>
+  </title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it
+        to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
